@@ -1,0 +1,13 @@
+
+* { margin: 0; padding: 0; }
+body { 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   	font-weight: 300; 
+}
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+h1 { font-weight: 300; font-size: 40px; margin: 0 0 10px 0; }
+
+#page-wrap { width: 960px; margin: 100px auto; position: relative;  }

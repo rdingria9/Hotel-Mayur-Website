@@ -1,0 +1,37 @@
+<html>
+<head><title>Book</title>
+<style type=css/text>
+.fontFamily{
+	font-size:36pt;
+	font-family:"Harlow Solid";
+	color : white;
+}
+</style>
+</head>
+<body>
+ <form class="font-family" method="post" action="">
+          <fieldset>
+            <label><strong>Your Name:</strong>
+              <input type="text" value="">
+            </label><br>
+            <label><strong>Your E-mail:</strong>
+              <input type="text" value="">
+            </label><br>
+            <label><strong>Your Address:</strong>
+              <textarea></textarea>
+            </label><br>
+			<label><strong>Choose type of room:</strong>
+              <input type="list" name = "" >
+				<select>
+				<option>--select--</option>
+				<option>2NAC</option>
+				<option>3NAC</option>
+				<option>2Ac</option>
+				<option>3AC</option>
+				</select>
+            </label><br>
+            <div class="btns"><a href="#" class="button">Clear</a><a href="#" class="button">Send</a></div>
+          </fieldset>
+        </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+CREATE TABLE contact (
+  name char(20) NOT NULL,
+  email varchar(50) NOT NULL,
+  message varchar(256) NOT NULL
+);
+CREATE TABLE customer (
+  cid tinyint(4) NOT NULL AUTO_INCREMENT,
+  name varchar(50) NOT NULL,
+  email varchar(255) NOT NULL,
+  Address char(255) NOT NULL,
+  rtype char(4) NOT NULL,
+  datefrom varchar(20) NOT NULL,
+  dateto varchar(20) NOT NULL,
+  status char(10) DEFAULT NULL,
+  price int(11) NOT NULL,
+  PRIMARY KEY (cid)
+);
+CREATE TABLE dis (
+  discount varchar(10) NOT NULL
+);
+CREATE TABLE login (
+  name varchar(30) NOT NULL,
+  pass varchar(30) NOT NULL
+);
+CREATE TABLE rate (
+  rtype varchar(10) NOT NULL,
+  rate int(11) NOT NULL
+);
+CREATE TABLE `room` (
+  cid tinyint(4) NOT NULL,
+  rid tinyint(4) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`rid`),
+  KEY cid (cid),
+  CONSTRAINT `room_ibfk_1` FOREIGN KEY (`cid`) REFERENCES `customer` (`cid`)
+)

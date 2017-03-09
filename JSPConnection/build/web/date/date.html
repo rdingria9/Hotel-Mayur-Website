@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+	<script type="text/javascript">
+	$(function () 
+	{
+       $("#datepick").ejDatePicker();
+	});
+	var curdate = new Date();// mentions the current date.
+	var rangeDate=new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);      
+	 $(function () {           
+            $("#datepick").ejDatePicker({
+                value: curdate; // the current date is used as default value
+                minDate: curdate;// Default date as mindate.
+                maxDate: rangeDate; // 30 –days of interval from min date.
+            });
+      });
+</script>  
+</head>
+<body>
+	<table>
+    <tr>
+		<td class="tdclass">Select date</td>
+    </tr>
+    <tr>
+       <td class="tdclass">
+             <span class="innerdp">
+                  <input id="datepick" type="text" />
+             </span>
+       </td>
+   </tr>
+   <tr>
+      <td class="tdclass">
+            <button class="book">Book</button>
+      </td>
+   </tr>
+</table>
+</body>
+</html>
